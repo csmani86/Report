@@ -54,7 +54,19 @@ public class BaseClass
 	public static int getBrowser(String testCaseName) 
 	{
 		String strExectuionChannel=(String) json.getJSONArray(testCaseName).get(1);
-		String strBrowserName=(String) json.getJSONArray(testCaseName).get(2);
+		//String strBrowserName=(String) json.getJSONArray(testCaseName).get(2);
+		// Code for Jenkins Jobs
+		String strBrowserName= "";
+		if(System.getProperty("Browser")==null)
+    	{
+    		strBrowserName=(String) json.getJSONArray(testCaseName).get(2);
+    		System.out.println("Excel Browser Name : " + strBrowserName);
+    	}
+    	else
+    	{
+    		strBrowserName = System.getProperty("Browser");
+            System.out.println("Jenkins Browser Name : " + strBrowserName);
+    	}
 		String strDeviceType=(String) json.getJSONArray(testCaseName).get(4);		
 		String strDeviceName=(String) json.getJSONArray(testCaseName).get(5);
 		int return_type = 0;
