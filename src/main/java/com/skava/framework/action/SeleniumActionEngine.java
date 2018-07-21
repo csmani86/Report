@@ -53,7 +53,9 @@ public class SeleniumActionEngine implements ActionEngine
 	private void init(int browserType) 
 	{
 		//System.out.println(Thread.currentThread().getStackTrace()[5].getMethodName());
-		String testCaseName = Thread.currentThread().getStackTrace()[5].getClassName().substring(20);
+		String[] testCaseName1 = Thread.currentThread().getStackTrace()[5].getClassName().split("\\.");
+    	int package_size = testCaseName1.length;
+    	String testCaseName = testCaseName1[package_size - 1];
 		String strBrowserName=(String) BaseClass.json.getJSONArray(testCaseName).get(2);
 		System.out.println("Excel Browser Name : " + strBrowserName);
         String BrowserName = System.getProperty("BrowserName");
