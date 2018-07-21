@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -18,14 +19,17 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -36,6 +40,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.framework.reporting.BaseClass;
 import com.skava.frameworkutils.Constants;
 import com.skava.frameworkutils.loggerUtils;
+
+import net.lightbody.bmp.client.ClientUtil;
 
 public class SeleniumActionEngine implements ActionEngine 
 {
@@ -75,11 +81,27 @@ public class SeleniumActionEngine implements ActionEngine
 				break;
 			
 			case Constants.LOCAL_BROWSER_CHROME:
-				System.setProperty("webdriver.chrome.driver", BaseClass.UserDir+BaseClass.properties.getProperty("DriversPath")+"chromedriver.exe");
-				this.driver = new ChromeDriver();
-				
-				break;
-				
+				if ("Linux".equalsIgnoreCase(System.getProperty("os.name"))) 
+                {
+                    System.setProperty("webdriver.chrome.driver", BaseClass.UserDir + BaseClass.properties.getProperty("DriversPath") + "chromedriver");
+                } 
+                else 
+                {
+                    System.setProperty("webdriver.chrome.driver", BaseClass.UserDir + BaseClass.properties.getProperty("DriversPath") + "chromedriver.exe");
+                }
+
+                ChromeOptions options = new ChromeOptions();
+                options.setExperimentalOption("useAutomationExtension", false);
+                options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+                options.addArguments("--no-sandbox");
+                options.addArguments("disable-gpu");
+                options.addArguments("--headless");
+                options.addArguments("--window-size=1380,768");
+                this.driver = new ChromeDriver(options);
+                //this.driver.manage().window().setSize(new Dimension(1380, 1024));
+                this.driver.manage().deleteAllCookies();
+                break;
+								
 			case Constants.LOCAL_BROWSER_IE:
 				System.setProperty("webdriver.ie.driver", BaseClass.UserDir+BaseClass.properties.getProperty("DriversPath")+"IEDriver.exe");
 				this.driver = new InternetExplorerDriver();
