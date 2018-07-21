@@ -79,7 +79,7 @@
                     
                     <configuration>
 				        <suiteXmlFiles>
-				            <suiteXmlFile>${testngFile}</suiteXmlFile>
+				            <suiteXmlFile>${ExecutionSuite}</suiteXmlFile>
 				        </suiteXmlFiles>
 				     </configuration>
 				   <!--   
