@@ -81,7 +81,17 @@
 				        <suiteXmlFiles>
 				            <suiteXmlFile>${ExecutionSuite}</suiteXmlFile>
 				        </suiteXmlFiles>
+						
+						<systemProperties>
+							<property>
+								<name>BrowserName</name>
+								<value>${BrowserName}</value>
+							</property>
+						</systemProperties>
+						
 				     </configuration>
+					 
+
 				   <!--   
 				     
                     <configuration>
