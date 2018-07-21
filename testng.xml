@@ -2,17 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Extent Parallel Test" configfailurepolicy="continue">
 	<test name="ExtentWithParallelClasses" parallel="classes"
-		thread-count="10">
-		<groups>
-			<run>
-				<include name="Smoke">
-				</include>
-				<exclude name="Sanity">
-				</exclude>
-			</run>
-		</groups>
-		
+		thread-count="20">
 		<classes>
+		
 			<class name="com.skava.test_cases.TC1_Test" />
 			<class name="com.skava.test_cases.TC2_Test" />
 			<class name="com.skava.test_cases.TC3_Test" />
