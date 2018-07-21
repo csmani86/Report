@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Extent_Parallel_Test">
+              <span class="suite-name border-passed">Extent Parallel Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Extent_Parallel_Test">
+                    <span>E:\NewAutomation\SkavaProduct\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Extent_Parallel_Test">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Extent_Parallel_Test">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Extent_Parallel_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Extent_Parallel_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Extent_Parallel_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Extent_Parallel_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Extent_Parallel_Test" class="hide-methods passed suite-Extent_Parallel_Test"> (hide)</a> <!-- hide-methods passed suite-Extent_Parallel_Test -->
+                      <a href="#" panel-name="suite-Extent_Parallel_Test" class="show-methods passed suite-Extent_Parallel_Test"> (show)</a> <!-- show-methods passed suite-Extent_Parallel_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Extent_Parallel_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extent_Parallel_Test" title="com.skava.test_cases.TC1_Test" hash-for-method="TC1">TC1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extent_Parallel_Test" title="com.skava.header_pkg.TC11_Test" hash-for-method="TC11">TC11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extent_Parallel_Test" title="com.skava.header_pkg.TC12_Test" hash-for-method="TC12">TC12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extent_Parallel_Test" title="com.skava.header_pkg.TC13_Test" hash-for-method="TC13">TC13</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extent_Parallel_Test" title="com.skava.header_pkg.TC14_Test" hash-for-method="TC14">TC14</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extent_Parallel_Test" title="com.skava.header_pkg.TC15_Test" hash-for-method="TC15">TC15</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extent_Parallel_Test" title="com.skava.test_cases.TC2_Test" hash-for-method="TC2">TC2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extent_Parallel_Test" title="com.skava.test_cases.TC3_Test" hash-for-method="TC3">TC3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extent_Parallel_Test" title="com.skava.test_cases.TC4_Test" hash-for-method="TC4">TC4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extent_Parallel_Test" title="com.skava.test_cases.TC5_Test" hash-for-method="TC5">TC5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Extent_Parallel_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Extent_Parallel_Test" class="panel Extent_Parallel_Test">
+          <div class="suite-Extent_Parallel_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.skava.header_pkg.TC14_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC14">
+                  </a> <!-- TC14 -->
+                  <span class="method-name">TC14</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extent_Parallel_Test-class-passed -->
+          <div class="suite-Extent_Parallel_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.skava.test_cases.TC5_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC5">
+                  </a> <!-- TC5 -->
+                  <span class="method-name">TC5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extent_Parallel_Test-class-passed -->
+          <div class="suite-Extent_Parallel_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.skava.header_pkg.TC13_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC13">
+                  </a> <!-- TC13 -->
+                  <span class="method-name">TC13</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extent_Parallel_Test-class-passed -->
+          <div class="suite-Extent_Parallel_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.skava.test_cases.TC2_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC2">
+                  </a> <!-- TC2 -->
+                  <span class="method-name">TC2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extent_Parallel_Test-class-passed -->
+          <div class="suite-Extent_Parallel_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.skava.header_pkg.TC15_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC15">
+                  </a> <!-- TC15 -->
+                  <span class="method-name">TC15</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extent_Parallel_Test-class-passed -->
+          <div class="suite-Extent_Parallel_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.skava.header_pkg.TC12_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC12">
+                  </a> <!-- TC12 -->
+                  <span class="method-name">TC12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extent_Parallel_Test-class-passed -->
+          <div class="suite-Extent_Parallel_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.skava.test_cases.TC3_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC3">
+                  </a> <!-- TC3 -->
+                  <span class="method-name">TC3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extent_Parallel_Test-class-passed -->
+          <div class="suite-Extent_Parallel_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.skava.header_pkg.TC11_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC11">
+                  </a> <!-- TC11 -->
+                  <span class="method-name">TC11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extent_Parallel_Test-class-passed -->
+          <div class="suite-Extent_Parallel_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.skava.test_cases.TC4_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC4">
+                  </a> <!-- TC4 -->
+                  <span class="method-name">TC4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extent_Parallel_Test-class-passed -->
+          <div class="suite-Extent_Parallel_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.skava.test_cases.TC1_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC1">
+                  </a> <!-- TC1 -->
+                  <span class="method-name">TC1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extent_Parallel_Test-class-passed -->
+        </div> <!-- panel Extent_Parallel_Test -->
+        <div panel-name="test-xml-Extent_Parallel_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\NewAutomation\SkavaProduct\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Extent Parallel Test&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; name=&quot;ExtentWithParallelClasses&quot; parallel=&quot;classes&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Smoke&quot;/&gt;
+        &lt;exclude name=&quot;Sanity&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.skava.test_cases.TC1_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.test_cases.TC2_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.test_cases.TC3_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.test_cases.TC4_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.test_cases.TC5_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.test_cases.TC16_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.test_cases.TC17_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.test_cases.TC18_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.test_cases.TC19_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.test_cases.TC20_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.header_pkg.TC6_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.header_pkg.TC7_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.header_pkg.TC8_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.header_pkg.TC9_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.header_pkg.TC10_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.header_pkg.TC11_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.header_pkg.TC12_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.header_pkg.TC13_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.header_pkg.TC14_Test&quot;/&gt;
+      &lt;class name=&quot;com.skava.header_pkg.TC15_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ExtentWithParallelClasses --&gt;
+&lt;/suite&gt; &lt;!-- Extent Parallel Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Extent_Parallel_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Extent Parallel Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ExtentWithParallelClasses (20 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Extent_Parallel_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Extent Parallel Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC11</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC12</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC13</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC14</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC15</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Extent_Parallel_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Extent Parallel Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Extent_Parallel_Test');
+function tableData_Extent_Parallel_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC1')
+data.setCell(0, 2, 'com.skava.test_cases.TC1_Test')
+data.setCell(0, 3, 3422);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC5')
+data.setCell(1, 2, 'com.skava.test_cases.TC5_Test')
+data.setCell(1, 3, 3057);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC11')
+data.setCell(2, 2, 'com.skava.header_pkg.TC11_Test')
+data.setCell(2, 3, 505);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC13')
+data.setCell(3, 2, 'com.skava.header_pkg.TC13_Test')
+data.setCell(3, 3, 456);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC4')
+data.setCell(4, 2, 'com.skava.test_cases.TC4_Test')
+data.setCell(4, 3, 453);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC15')
+data.setCell(5, 2, 'com.skava.header_pkg.TC15_Test')
+data.setCell(5, 3, 422);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC14')
+data.setCell(6, 2, 'com.skava.header_pkg.TC14_Test')
+data.setCell(6, 3, 375);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC3')
+data.setCell(7, 2, 'com.skava.test_cases.TC3_Test')
+data.setCell(7, 3, 22);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC2')
+data.setCell(8, 2, 'com.skava.test_cases.TC2_Test')
+data.setCell(8, 3, 11);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC12')
+data.setCell(9, 2, 'com.skava.header_pkg.TC12_Test')
+data.setCell(9, 3, 4);
+window.suiteTableData['Extent_Parallel_Test']= { tableData: data, tableDiv: 'times-div-Extent_Parallel_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-Extent_Parallel_Test">
+              </div> <!-- times-div-Extent_Parallel_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Extent_Parallel_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Extent Parallel Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Extent_Parallel_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">48 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.test_cases.TC5_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.test_cases.TC18_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC18</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.test_cases.TC20_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC20</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.test_cases.TC16_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC16</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.header_pkg.TC10_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC10</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.header_pkg.TC13_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.test_cases.TC2_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.header_pkg.TC15_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.test_cases.TC3_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.test_cases.TC4_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.test_cases.TC19_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">TC19</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.header_pkg.TC14_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.header_pkg.TC8_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC8</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.header_pkg.TC6_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC6</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.test_cases.TC17_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC17</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.header_pkg.TC9_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC9</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.header_pkg.TC7_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC7</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.header_pkg.TC12_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.skava.header_pkg.TC11_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Extent_Parallel_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC1_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC2_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">304 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC1_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">304 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC11_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">306 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC12_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">306 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC13_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">306 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC14_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">306 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC15_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">310 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC11_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.skava.header_pkg.TC11_Test.TC11() throws java.lang.Exception)</span>
+                <span class="method-start">315 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC12_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.skava.header_pkg.TC12_Test.TC12() throws java.lang.Exception)</span>
+                <span class="method-start">315 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC4_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.skava.test_cases.TC4_Test.TC4() throws java.lang.Exception)</span>
+                <span class="method-start">315 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC1_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.skava.test_cases.TC1_Test.TC1() throws java.lang.Exception)</span>
+                <span class="method-start">315 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC14_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.skava.header_pkg.TC14_Test.TC14() throws java.lang.Exception)</span>
+                <span class="method-start">315 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC13_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.skava.header_pkg.TC13_Test.TC13() throws java.lang.Exception)</span>
+                <span class="method-start">316 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC3_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.skava.test_cases.TC3_Test.TC3() throws java.lang.Exception)</span>
+                <span class="method-start">316 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC2_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.skava.test_cases.TC2_Test.TC2() throws java.lang.Exception)</span>
+                <span class="method-start">317 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC15_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.skava.header_pkg.TC15_Test.TC15() throws java.lang.Exception)</span>
+                <span class="method-start">318 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC5_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.skava.test_cases.TC5_Test.TC5() throws java.lang.Exception)</span>
+                <span class="method-start">318 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC2_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC2</span>
+                <span class="method-start">420 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC3_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC3</span>
+                <span class="method-start">420 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC5_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC5</span>
+                <span class="method-start">420 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC13_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC13</span>
+                <span class="method-start">420 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC14_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC14</span>
+                <span class="method-start">420 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC12_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC12</span>
+                <span class="method-start">421 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC11_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC11</span>
+                <span class="method-start">421 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC4_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC4</span>
+                <span class="method-start">421 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC15_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC15</span>
+                <span class="method-start">421 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC1_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC1</span>
+                <span class="method-start">421 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC2_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC2 status=SUCCESS method=TC2_Test.TC2()[pri:0, instance:com.skava.test_cases.TC2_T...)</span>
+                <span class="method-start">435 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC3_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC3 status=SUCCESS method=TC3_Test.TC3()[pri:0, instance:com.skava.test_cases.TC3_T...)</span>
+                <span class="method-start">447 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC12_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC12 status=SUCCESS method=TC12_Test.TC12()[pri:0, instance:com.skava.header_pkg.TC...)</span>
+                <span class="method-start">492 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC14_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC14 status=SUCCESS method=TC14_Test.TC14()[pri:0, instance:com.skava.header_pkg.TC...)</span>
+                <span class="method-start">796 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC2_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">797 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC15_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC15 status=SUCCESS method=TC15_Test.TC15()[pri:0, instance:com.skava.header_pkg.TC...)</span>
+                <span class="method-start">844 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC12_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">874 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC4_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC4 status=SUCCESS method=TC4_Test.TC4()[pri:0, instance:com.skava.test_cases.TC4_T...)</span>
+                <span class="method-start">875 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC13_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC13 status=SUCCESS method=TC13_Test.TC13()[pri:0, instance:com.skava.header_pkg.TC...)</span>
+                <span class="method-start">884 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC11_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC11 status=SUCCESS method=TC11_Test.TC11()[pri:0, instance:com.skava.header_pkg.TC...)</span>
+                <span class="method-start">929 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC15_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">931 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC13_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1013 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC14_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1036 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.header_pkg.TC11_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1062 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC5_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC5 status=SUCCESS method=TC5_Test.TC5()[pri:0, instance:com.skava.test_cases.TC5_T...)</span>
+                <span class="method-start">3478 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.skava.test_cases.TC1_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC1 status=SUCCESS method=TC1_Test.TC1()[pri:0, instance:com.skava.test_cases.TC1_T...)</span>
+                <span class="method-start">3843 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">3858 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">3880 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

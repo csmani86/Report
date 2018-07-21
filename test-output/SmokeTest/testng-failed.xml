@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeTest]">
+  <parameter name="browser" value="chrome"/>
+  <test name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.skava.testcases.TC00">
+        <methods>
+          <include name="Test"/>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- com.skava.testcases.TC00 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [SmokeTest] -->
