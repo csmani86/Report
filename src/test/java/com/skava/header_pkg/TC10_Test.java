@@ -12,7 +12,7 @@ public class TC10_Test extends TestComponents
 	@BeforeClass(alwaysRun = true)
 	public void initTest() throws IOException
 	{		
-		//driver = initiTest(this.getClass().getSimpleName());
+		driver = initiTest(this.getClass().getSimpleName());
 		//driver.maximizeBrowser();
 	}
 	
