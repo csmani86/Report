@@ -83,7 +83,7 @@
 				        </suiteXmlFiles>
 						
 						<systemPropertyVariables>
-							<browserName>${Select Browser}</browserName>
+							<browserName>${SelectBrowser}</browserName>
 						</systemPropertyVariables>
 				     </configuration>
 					 
