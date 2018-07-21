@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Extent Parallel Test" configfailurepolicy="continue">
+	<test name="ExtentWithParallelClasses" parallel="classes"
+		thread-count="20">
+		<classes>
+		
+			<class name="com.skava.header_pkg.TC6_Test" />
+			<class name="com.skava.header_pkg.TC7_Test" />
+			<class name="com.skava.header_pkg.TC8_Test" />
+			<class name="com.skava.header_pkg.TC9_Test" />
+			<class name="com.skava.header_pkg.TC10_Test" />
+			
+			<class name="com.skava.header_pkg.TC11_Test" />
+			<class name="com.skava.header_pkg.TC12_Test" />
+			<class name="com.skava.header_pkg.TC13_Test" />
+			<class name="com.skava.header_pkg.TC14_Test" />
+			<class name="com.skava.header_pkg.TC15_Test" />
+
+		</classes>
+	</test>
+</suite>
