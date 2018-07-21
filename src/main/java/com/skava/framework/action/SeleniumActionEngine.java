@@ -58,11 +58,20 @@ public class SeleniumActionEngine implements ActionEngine
 		String[] testCaseName1 = Thread.currentThread().getStackTrace()[5].getClassName().split("\\.");
     	int package_size = testCaseName1.length;
     	String testCaseName = testCaseName1[package_size - 1];
-		String strBrowserName=(String) BaseClass.json.getJSONArray(testCaseName).get(2);
-		System.out.println("Excel Browser Name : " + strBrowserName);
-        String BrowserName = System.getProperty("BrowserName");
-        System.out.println("Jenkins Browser Name : " + BrowserName);
-		String strBrowserVersion=(String) BaseClass.json.getJSONArray(testCaseName).get(3);
+    	// Code for Parameterized Jenkins
+    	String strBrowserName = "";
+    	if(System.getProperty("BrowserName")==null)
+    	{
+    		strBrowserName=(String) BaseClass.json.getJSONArray(testCaseName).get(2);
+    		System.out.println("Excel Browser Name : " + strBrowserName);
+    	}
+    	else
+    	{
+    		strBrowserName = System.getProperty("BrowserName");
+            System.out.println("Jenkins Browser Name : " + strBrowserName);
+    	}
+		
+        String strBrowserVersion=(String) BaseClass.json.getJSONArray(testCaseName).get(3);
 		String strDeviceName=(String) BaseClass.json.getJSONArray(testCaseName).get(5);
 		String strDeviceOS=(String) BaseClass.json.getJSONArray(testCaseName).get(6);
 		
