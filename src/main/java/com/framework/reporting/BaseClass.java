@@ -200,6 +200,7 @@ public class BaseClass
 				e.printStackTrace();
 			}
 			
+			System.out.println("Channel Name : " + System.getProperty("Channel"));
 			//Read test runner file for test run configurations
 			initBatchExec();
 			
