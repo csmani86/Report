@@ -210,12 +210,6 @@ public class BaseClass
 	                    properties.put(key, data);
 	                }
 	            }
-	            
-	            if(!(System.getProperty("Channel")==null))
-	        	{
-	            	System.out.println("System Properties : " + System.getProperty("Channel"));
-	            	properties.put("RunConfigSheetName", System.getProperty("RunManager"));
-	        	}
 	        } 
 	        catch (IOException e) 
 	        {
