@@ -83,6 +83,7 @@
 				        </suiteXmlFiles>
 						
 						<systemPropertyVariables>
+						<channelName>${Channel}</channelName>
 							<browserName>${SelectBrowser}</browserName>
 						</systemPropertyVariables>
 				     </configuration>

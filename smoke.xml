@@ -6,7 +6,7 @@
 		<classes>
 		
 			<class name="com.skava.test_cases.TC1_Test" />
-			<class name="com.skava.test_cases.TC2_Test" />
+			<!-- <class name="com.skava.test_cases.TC2_Test" />
 			<class name="com.skava.test_cases.TC3_Test" />
 			<class name="com.skava.test_cases.TC4_Test" />
 			<class name="com.skava.test_cases.TC5_Test" />
@@ -27,7 +27,7 @@
 			<class name="com.skava.header_pkg.TC12_Test" />
 			<class name="com.skava.header_pkg.TC13_Test" />
 			<class name="com.skava.header_pkg.TC14_Test" />
-			<class name="com.skava.header_pkg.TC15_Test" />
+			<class name="com.skava.header_pkg.TC15_Test" /> -->
 
 		</classes>
 	</test>
