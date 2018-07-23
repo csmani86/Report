@@ -12,7 +12,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
-import java.util.Set;
 
 import org.apache.commons.lang.WordUtils;
 import org.apache.commons.net.ntp.TimeStamp;
@@ -179,45 +178,30 @@ public class BaseClass
 	
 	@BeforeSuite (alwaysRun = true)
 	public void beforeSuite() throws IOException 
-		{
-	        //Load properties file
-	        File file = new File(ConfigFilePath);
-	        FileInputStream fileInput = null;
-	        try 
-	        {
-	            fileInput = new FileInputStream(file);
-	        } 
-	        catch (FileNotFoundException e) 
-	        {
-	            e.printStackTrace();
-	        }
-	
-	        try 
-	        {
-	            properties.load(fileInput);
-	            Properties tempProperties = new Properties();
-	            tempProperties = (Properties) properties.clone();
-	
-	            Set<Object> keys = tempProperties.keySet();
-	            //System.out.println(keys.toString());
-	            for (Object k : keys) {
-	                String key = (String) k;
-	                //System.out.println(key);
-	                if (key.startsWith(properties.getProperty("RunningEnvironment"))) {
-	                    String data = properties.getProperty(key);
-	                    properties.remove(key);
-	                    key = key.replace(properties.getProperty("RunningEnvironment") + "_", "");
-	                    properties.put(key, data);
-	                }
-	            }
-	        } 
-	        catch (IOException e) 
-	        {
-	            e.printStackTrace();
-	        }
-	
-	        //Read test runner file for test run configurations
-	        initBatchExec();
+	{
+		//Load properties file		
+		 File file = new File(ConfigFilePath);		  
+		 FileInputStream fileInput = null;
+			try 
+			{
+				fileInput = new FileInputStream(file);
+			} 
+			catch (FileNotFoundException e) 
+			{
+				e.printStackTrace();
+			}				
+			
+			try 
+			{
+				properties.load(fileInput);
+			} 
+			catch (IOException e) 
+			{
+				e.printStackTrace();
+			}
+			
+			//Read test runner file for test run configurations
+			initBatchExec();
 			
 			//Setup reports path for current run 
 			TimeStamp time=new TimeStamp(System.currentTimeMillis());	

@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.skava.testcases.TC1_Test">
+      <class name="com.skava.header_pkg.TC6_Test">
         <methods>
+          <include name="TC6"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="TC1"/>
+          <include name="initTest"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
-          <include name="initTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.skava.testcases.TC1_Test -->
+      </class> <!-- com.skava.header_pkg.TC6_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
