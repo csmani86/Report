@@ -15,13 +15,11 @@ public class TC1_Test extends TestComponents
 	{		
 		/*driver = initiTest(this.getClass().getSimpleName());
 		driver.maximizeBrowser();*/
-		System.out.println(Thread.currentThread().getStackTrace()[1]);
 	}
 	
 	@Test(groups = {"Smoke"})
 	public void TC1() throws Exception 
 	{
-		System.out.println(Thread.currentThread().getStackTrace()[1]);
 		//System.out.println(Thread.currentThread().getId());
 		long val = Thread.currentThread().getId();
 		logInfo("The thread id is : "  + val);

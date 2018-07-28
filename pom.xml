@@ -81,12 +81,7 @@
 				        <suiteXmlFiles>
 				            <suiteXmlFile>${SelectSuite}</suiteXmlFile>
 				        </suiteXmlFiles>
-						
-						<systemPropertyVariables>
-							<browserName>${SelectBrowser}</browserName>
-						</systemPropertyVariables>
 				     </configuration>
-					 
 
 				     <!-- 
 				     
