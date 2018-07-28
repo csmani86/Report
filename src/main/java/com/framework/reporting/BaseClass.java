@@ -200,7 +200,7 @@ public class BaseClass
 				e.printStackTrace();
 			}
 			
-			System.out.println("Suite Name : " + System.getProperty("testtFile"));
+			System.out.println("Suite Name : " + System.getProperty("suiteFile"));
 			System.out.println("Browser Name : " + System.getProperty("Browser"));
 			
 			//Read test runner file for test run configurations
