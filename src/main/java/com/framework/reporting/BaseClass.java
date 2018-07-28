@@ -200,8 +200,10 @@ public class BaseClass
 				e.printStackTrace();
 			}
 			
-			System.out.println("Suite Name : " + System.getProperty("suiteFile"));
-			System.out.println("Jenkins Browser Name : " + System.getProperty("Browser"));
+			System.out.println("Channel Name : " + System.getProperty("currentChannel"));
+			System.out.println("Jenkins Browser Name : " + System.getProperty("currentBrowser"));
+			System.out.println("Suite Name : " + System.getProperty("currentTestFile"));
+			
 			
 			//Read test runner file for test run configurations
 			initBatchExec();
