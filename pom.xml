@@ -84,7 +84,6 @@
 						
 						<systemPropertyVariables>
 							<browserName>${SelectBrowser}</browserName>
-							<channelName>${Channel}</channelName>
 						</systemPropertyVariables>
 				     </configuration>
 					 
