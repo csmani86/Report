@@ -200,9 +200,10 @@ public class BaseClass
 				e.printStackTrace();
 			}
 			
+			System.out.println("Suite Name : " + System.getProperty("SelectSuite"));
 			System.out.println("Channel Name : " + System.getProperty("Channel"));
-			System.out.println("Browser Name : " + System.getProperty("Browser"));
-			System.out.println("Suite Name : " + System.getProperty("Suite"));
+			System.out.println("Browser Name : " + System.getProperty("SelectBrowser"));
+			
 			//Read test runner file for test run configurations
 			initBatchExec();
 			

@@ -79,11 +79,11 @@
                     
                     <configuration>
 				        <suiteXmlFiles>
-				            <suiteXmlFile>${Suite}</suiteXmlFile>
+				            <suiteXmlFile>${SelectSuite}</suiteXmlFile>
 				        </suiteXmlFiles>
 						
 						<systemPropertyVariables>
-							<browserName>${Browser}</browserName>
+							<browserName>${SelectBrowser}</browserName>
 							<channelName>${Channel}</channelName>
 						</systemPropertyVariables>
 				     </configuration>
