@@ -57,14 +57,14 @@ public class BaseClass
 		//String strBrowserName=(String) json.getJSONArray(testCaseName).get(2);
 		// Code for Jenkins Jobs
 		String strBrowserName= "";
-		if(System.getProperty("Browser")==null)
+		if(System.getProperty("currentBrowser")==null)
     	{
     		strBrowserName=(String) json.getJSONArray(testCaseName).get(2);
     		System.out.println("Excel Browser Name : " + strBrowserName);
     	}
     	else
     	{
-    		strBrowserName = System.getProperty("Browser");
+    		strBrowserName = System.getProperty("currentBrowser");
             System.out.println("Jenkins Browser Name : " + strBrowserName);
     	}
 		String strDeviceType=(String) json.getJSONArray(testCaseName).get(4);		

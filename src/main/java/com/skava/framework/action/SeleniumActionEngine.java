@@ -62,14 +62,14 @@ public class SeleniumActionEngine implements ActionEngine
     	String testCaseName = testCaseName1[package_size - 1];
     	// Code for Parameterized Jenkins
     	String strBrowserName = "";
-    	if(System.getProperty("Browser")==null)
+    	if(System.getProperty("currentBrowser")==null)
     	{
     		strBrowserName=(String) BaseClass.json.getJSONArray(testCaseName).get(2);
     		System.out.println("Excel Browser Name : " + strBrowserName);
     	}
     	else
     	{
-    		strBrowserName = System.getProperty("Browser");
+    		strBrowserName = System.getProperty("currentBrowser");
             System.out.println("Jenkins Browser Name : " + strBrowserName);
     	}
 		
