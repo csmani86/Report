@@ -201,8 +201,9 @@ public class BaseClass
 			}
 			
 			System.out.println("Suite Name : " + System.getProperty("suiteFile"));
+			System.out.println("Suite Name : " + System.getProperty("SelectSuite"));
 			System.out.println("Current Browser Name : " + System.getProperty("CurrentBrowser"));
-			System.out.println("Jenkins Browser Name : " + System.getProperty("Browser"));
+			System.out.println("Jenkins Browser Name : " + System.getProperty("Broowser"));
 			
 			//Read test runner file for test run configurations
 			initBatchExec();
