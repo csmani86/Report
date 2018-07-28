@@ -79,7 +79,7 @@
                     
                     <configuration>
 				        <suiteXmlFiles>
-				            <suiteXmlFile>${suiteFile}</suiteXmlFile>
+				            <suiteXmlFile>${currentTestFile}</suiteXmlFile>
 				        </suiteXmlFiles>
 				     </configuration>
 
