@@ -81,10 +81,6 @@
 				        <suiteXmlFiles>
 				            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 				        </suiteXmlFiles>
-						
-						<systemPropertyVariables>
-							<browser>${currentBrowser}</browser>
-						</systemPropertyVariables>
 				     </configuration>
 
 				     <!-- 
