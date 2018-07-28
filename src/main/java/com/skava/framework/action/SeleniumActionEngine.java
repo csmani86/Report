@@ -9,6 +9,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
 import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
@@ -26,6 +27,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -81,7 +83,9 @@ public class SeleniumActionEngine implements ActionEngine
 		{
 			case Constants.LOCAL_BROWSER_FIREFOX:
 				System.setProperty("webdriver.gecko.driver", BaseClass.UserDir+BaseClass.properties.getProperty("DriversPath")+"geckodriver.exe");
-				this.driver = new FirefoxDriver();
+				FirefoxOptions foptions = new FirefoxOptions()
+					       .setLogLevel(Level.OFF);
+				this.driver = new FirefoxDriver(foptions);
 
 				break;
 			
