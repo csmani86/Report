@@ -79,7 +79,7 @@
                     
                     <configuration>
 				        <suiteXmlFiles>
-				            <suiteFile>${suiteXmlFile}</suiteFile>
+				            <suiteXmlFile>${suiteFile}</suiteXmlFile>
 				        </suiteXmlFiles>
 						
 						<systemPropertyVariables>
