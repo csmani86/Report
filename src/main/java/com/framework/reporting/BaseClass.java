@@ -201,7 +201,7 @@ public class BaseClass
 			}
 			
 			System.out.println("Suite Name : " + System.getProperty("suiteXmlFile"));
-			System.out.println("Browser Name : " + System.getProperty("Browser"));
+			System.out.println("Browser Name : " + System.getProperty("SelectBrowser"));
 			
 			//Read test runner file for test run configurations
 			initBatchExec();
